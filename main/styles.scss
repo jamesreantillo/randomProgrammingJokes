@@ -4,7 +4,7 @@ body {
   background: #51bbc9;
   font-family: 'Permanent Marker';
   font-size: 1.5rem;
-  padding: 10px 100px 10px 10px;
+  padding: 10px 30px;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1::before {
   height: 6px;
   width: 100%;
   background: white;
-  bottom: 4px;
+  bottom: 1px;
   z-index: -1;
 }
 
@@ -37,6 +37,7 @@ button {
 .joke {
   display: flex;
   flex-direction: column;
+  place-items: center;
 }
 
 .bubble {
@@ -58,4 +59,10 @@ button {
   border-radius: 0 0 100%;
   box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset,
     -25px -2px 0 0 #000 inset;
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 1rem;
+  }
 }
